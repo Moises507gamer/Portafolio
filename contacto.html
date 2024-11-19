@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="diseño.css">
+    <script>
+        function mostrarMensaje() {
+            alert("Esta acción está en construcción");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="resources/Logo_Portafolio.png" width="40" height="40">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="contact">
+            <h1>Contacto</h1>
+            <br>
+                <form onsubmit="mostrarMensaje(); return false;">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br>
+
+                    <button type="submit">Enviar</button>
+                </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Portafolio Moisés Espinosa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
